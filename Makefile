@@ -5,7 +5,7 @@ all: resume
 resume: resume.tex
 	mkdir -p build
 	pdflatex -output-directory=build resume.tex > /dev/null
-	mv build/resume.pdf Resume.pdf
+	mv build/resume.pdf "Cameron MacGillivary Resume.pdf"
 	
 clean:
-	rm -rf build Resume.pdf
+	rm -rf build "Cameron MacGillivary Resume.pdf"
