@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Cameron MacGillivary} \\ \vspace{1pt}
+    \small 226-927-5048 $|$ \href{mailto:c.macgillivary@outlook.com}{\underline{c.macgillivary@outlook.com}} $|$ 
+    \href{https://www.linkedin.com/in/cameron-macgillivary-93a882434/}{\underline{linkedin.com/in/cameron}} $|$
+    \href{https://github.com/c-macgillivary}{\underline{github.com/cameron}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Honours Bachelor of Computer Science}{Sep. 2026 -- Present}
+    \resumeSubheading
+      {Catholic Central High School}{London, ON}
+      {International Baccalaureate Certificate Programme \& Ontario Secondary School Diploma}{Sep. 2022 -- Jun. 2026}
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Scheme (Racket), Bash, LaTex} \\
+     \textbf{Developer Tools}{: Linux, Neovim, Git, GitHub, Ninja, CMake, Visual Studio, Excel, Tailscale, Kanata, systemd} \\
+     \textbf{Programming Concepts}{: Object Oriented Programming, Data Structures (lists, vectors, binary search trees)}
+    }}
+ \end{itemize}
+
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Agriculture Equipment Service Technician}{May 2023 -- Aug. 2026}
+      {Dortmans Bros Farm Equipment}{Strathroy, ON}
+      \resumeItemListStart
+        \resumeItem{Outfitted 5+ brand new facilities with Genius, Meridian, Vereijken, and ValMetal equipment and infrastructure.}
+        \resumeItem{Serviced, maintained, and installed feed, water, ventilation, and other critical equipment in livestock facilities.}
+        \resumeItem{Performed troubleshooting and repairs to ensure reliable operation and the health of the livestock.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vex V5 Robotics Team Lead}{Oct 2023 -- Jun. 2026}
+      {CCH Robotics Team}{London, ON}
+      \resumeItemListStart
+        \resumeItem{Oversaw logistics for the team (20+ people) and coordinated preparation for robotics competitions.}
+        \resumeItem{Organized team activities, delegated responsibilities, and supported competition readiness.}
+        \resumeItem{Collaborated with team members on robot development, assembly, and competition preparation.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Cub/Venture/Rover Scout}{Sep. 2016 -- Present}
+      {1st Strathroy Scouting, Scouts Canada}{Strathroy, ON}
+      \resumeItemListStart
+        \resumeItem{Organized and participated in camping trips to local and international destinations.}
+        \resumeItem{Planned and led meetings to teach youth wilderness survival skills.}
+        \resumeItem{Supported logistics and event operations at a local festival.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {4-H Dairy Club Member/Vice President}{May 2018 -- Nov. 2022}
+      {Forest 4-H Dairy Club}{Forest, ON}
+      \resumeItemListStart
+        \resumeItem{Directed club meetings and assisted new members with their 4-H projects.}
+        \resumeItem{Participated in local, provincial, and national livestock shows.}
+        \resumeItem{Trained and cared for dairy calves, including feeding, watering, washing, and cleaning pens.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Homelab} $|$ \emph{C++, Linux, TCP Sockets, Tailscale, Git, systemd}}{July 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a C++ client-server application using TCP sockets to communicate with a Linux server.}
+            \resumeItem{Designed a modular project architecture separating client, server, and shared components using CMake.}
+            \resumeItem{Configured and deployed a systemd service to run the server as a restricted, non-privileged user.}
+            \resumeItem{Managed a self-hosted minimal Arch Linux environment.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Custom Keyboard and Input Configuration} $|$ \emph{Linux, systemd, Kanata, ZMK}}{July 2025 -- June 2026}
+          \resumeItemListStart
+            \resumeItem{Configured Kanata using Lisp-like configuration files to implement custom keybindings across different keyboards.}
+            \resumeItem{Created a systemd service to start the remapping utility at boot as a background daemon.}
+            \resumeItem{Built a custom wireless split mechanical keyboard with LED displays and rotary encoders using ZMK firmware.}
+            \resumeItem{Created custom keyboard layouts with multiple layers, home-row modifiers, and key macros.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
